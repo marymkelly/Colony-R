@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+
+/* Navbar Section */
+.navbar-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background: #F5EBE0;
+}
+
+.navbar-logo {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    font-size: 1.4rem;
+}
+
+.navbar-list-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.items {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
+}
+
+/* home page section */
+
+#home-page {
+    height: auto;
+    width: auto;
+    background-color: #EDEDE9;
+    /* background: black; */
+}
+
+#introduction-section {
+    height: 650px;
+    width: 100vw;
+    background-image: url("/images/mars-mansion-interior-1542116883.jpeg");
+    background-size: cover;
+    background-position: 0 -400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.introduction-header {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    margin: 150px 0 50px 0;
+}
+
+.introduction-headline {
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 75px;
+
+}
+
+.introduction-btn {
+    width: 275px;
+    height: 75px;
+    font-size: 45px;
+    font-weight: 100;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 25ms ease-in-out;
+}
+
+.introduction-btn:hover {
+    font-weight: 400;
+}
+
+.introduction-fade-out {
+    height: 225px;
+    width: 100vw;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#EDEDE9), to(rgba(0, 0, 0, 0)));
+}
+
+#about-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+
+
+.about-section-header {
+    font-size: 4.5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 100;
+    margin: 50px 0;
+}
+
+.about-section-artical {
+    width: 60%;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+#model-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #edede9;
+    background-size: cover;
+}
+
+.model-fade-in {
+    height: 225px;
+    width: 100vw;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#EDEDE9), to(rgba(0, 0, 0, 0)));
+}
+
+.model-section-header {
+    font-size: 4.5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 100;
+    margin: 50px 0;
+}
+
+.model-container {
+    position: relative;
+    width: 80%;
+    height: 1000px;
+    background: #D6CCC2;
+    border-radius: 15px;
+    box-shadow: 10px 35px 50px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.model-1-container,
+.model-2-container,
+.model-3-container,
+.model-4-container {
+    position: relative;
+    height: 450px;
+    width: 525px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.model-1 {
+    background-image: url("/images/Itomic-Dome-Model.webp");
+    height: 450px;
+    width: 525px;
+    background-size: cover;
+    box-shadow: 5px 5px 7px gray;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.model-2 {
+    background-image: url("/images/house-2.webp");
+    height: 450px;
+    width: 525px;
+    background-size: 525px 450px;
+    box-shadow: 5px 5px 7px gray;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.model-3 {
+    background-image: url("/images/house-3.avif");
+    height: 450px;
+    width: 525px;
+    background-size: cover;
+    box-shadow: 5px 5px 7px gray;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.model-4 {
+    background-image: url("/images/house-4.jpeg");
+    height: 450px;
+    width: 525px;
+    background-size: cover;
+    box-shadow: 5px 5px 7px gray;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.model-1:hover,
+.model-2:hover,
+.model-3:hover,
+.model-4:hover {
+    filter: blur(2px);
+}
+
+.inquir-disabled {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    background: white;
+    z-index: 1;
+    border-radius: 4px;
+    left: -1000px;
+    /* opacity: 0; */
+}
+
+.inquir-active {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    background: white;
+    z-index: 1;
+    border-radius: 4px;
+    left: auto;
+    opacity: 1;
+}
+
