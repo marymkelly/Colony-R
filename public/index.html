@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colony-R</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Colony-R</a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </div>
+            <ul class="navbar-list-items">
+                <a class="links" href="index.html">
+                    <li class="items">Home</li>
+                </a>
+                <a class="links" href="about-us.html">
+                    <li class="items">About Us</li>
+                </a>
+                <a class="links" href="out-models.html">
+                    <li class="items">Our Models</li>
+                </a>
+                <a class="links" href="contact.html">
+                    <li class="items">Contact</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="inquire-box" class="inquire-box-disabled">
+        <form class="contact-form" id="form-data">
+            <i id="inquiry-exit-button" class="fa-solid fa-circle-xmark"></i>
+            <input placeholder="Full Name" type="text" id="name">
+            <input placeholder="E-mail" type="email" id="email">
+            <label id="model-list-header" for="model">What model are you interested in?</label>
+            <select name="model" id="model-list">
+                <option selected disabled value="">-- Choose Your Model --</option>
+                <option value="ionic-dome">Ionic Dome</option>
+                <option value="tetrix-dome">Tetrix Dome</option>
+                <option value="bionic-dome">Bionic Dome</option>
+                <option value="trionic-dome">Trionic Dome</option>
+            </select>
+            <input id="submit-button" type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <main id="home-page">
+        <section id="introduction-section">
+            <h4 class="introduction-header">Colony-R</h4>
+            <p class="introduction-headline">Are You Ready For A Life On Mars?</p>
+            <button class="introduction-btn">View Models</button>
+            <div class="introduction-fade-out"></div>
+        </section>
+        <section id="about-us-section">
+            <h4 class="about-section-header">About Colony-R</h4>
+            <p class="about-section-artical">
+                Since the great success of humanity colonizing mars back in the year of 2050 it was not until the year
+                of 2057 the general public were able to by real-estate on the planet mars. Colony-R was the first cosmic
+                home builder company to sell houses to general public that year allowing anyone the opportunity to move
+                off of earth to mars. Colony-R is well know for making cosmic real-estate much more affordable for the
+                average person seeking to buy real-estate on the planet mars, with a fine tune for more luxurious homes
+                for anyone who could afford it.
+            </p>
+        </section>
+        <section id="model-section">
+            <h4 class="model-section-header">Our Models</h4>
+            <div class="model-container">
+                <div class="model-1-container model-image">
+                    <button class="inquiry-button inquire-disabled">Inquire</button>
+                    <div class="model-1"></div>
+                </div>
+                <div class="model-3-container model-image">
+                    <button class="inquiry-button inquire-disabled">Inquire</button>
+                    <div class="model-2"></div>
+                </div>
+                <div class="model-2-container model-image">
+                    <button class="inquiry-button inquire-disabled">Inquire</button>
+                    <div class="model-3"></div>
+                </div>
+                <div class="model-4-container model-image">
+                    <button class="inquiry-button inquire-disabled">Inquire</button>
+                    <div class="model-4"></div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
