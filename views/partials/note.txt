@@ -1,0 +1,8 @@
+Just a note on this 'partials' folder - 
+
+It's name has no real significance, although this type of naming and file structure is not uncommon to see.  partials usually just houses exactly that... 
+partial pieces of files that are frequently used across many files (e.g. headers, footers). Some people like to put navbars and other small page pieces they use frequently, it's just however you
+prefer to organize your code. 
+
+The only thing to note in the other template files, is to use them, you have to make sure you're writing the relative path so they can find each other.  
+(So in header file I included some ejs code at the bottom that has the relative path to access the nav, and then import the header file similarly in your index file just to illustrate the point).

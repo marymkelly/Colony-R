@@ -47,4 +47,24 @@ app.get("/", (req, res) => {
 // 	});
 // });
 
+// /about
+app.get("/about", (req, res) => {
+	res.render("about"); // pulls very empty about.html file I added in views
+});
+
+// /models
+app.get("/models", (req, res) => {
+	res.status(404).send('Oops'); // didn't make a file/this doesn't exist so could send back something like a 404 status
+});
+
+// /contact
+app.get("/contact", (req, res) => {
+	res.send("Contact Us Page"); // or we could send back string.  This are just random examples for your knowledge
+});
+
+// the * acts as a wildpath that will match any [get] routes not specified above, so I'm redirecting the user back to the index page if so
+app.get("*", (req, res) => {
+	res.redirect("/");
+});
+
 app.listen(3000);
