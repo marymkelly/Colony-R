@@ -1,4 +1,5 @@
 //functionality for the model preveiws 
+
 const modelContainer = document.getElementsByClassName("model-image");
 const inquiryButton = document.getElementsByClassName("inquiry-button");
 

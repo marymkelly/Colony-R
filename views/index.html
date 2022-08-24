@@ -18,25 +18,40 @@
                 for anyone who could afford it.
             </p>
         </section>
+        <section id="inquire-box" class="inquire-box-disabled">
+            <form class="contact-form" id="form-data">
+                <i id="inquiry-exit-button" class="fa-solid fa-circle-xmark"></i>
+                <input placeholder="Full Name" type="text" id="name">
+                <input placeholder="E-mail" type="email" id="email">
+                <label id="model-list-header" for="model-list">What model are you interested in?</label>
+                <select name="model" id="model-list">-
+                    <option selected disabled value="">-- Choose Your Model --</option>
+                    <option value="ionic-dome">Ionic Dome</option>
+                    <option value="tetrix-dome">Tetrix Dome</option>
+                    <option value="bionic-dome">Bionic Dome</option>
+                    <option value="trionic-dome">Trionic Dome</option>
+                </select>
+                <input id="submit-button" type="submit" value="Send Message">
+            </form>
+        </section>
         <section id="model-section">
-            <!-- <div class="model-fade-in"></div> -->
             <h4 class="model-section-header">Our Models</h4>
             <div class="model-container">
-                <div class="model-1-container">
-                    <div class="inquiry-button inquir-disabled"></div>
-                    <div class="model-1 model-image"></div>
+                <div class="model-1-container model-image">
+                    <button class="inquiry-button inquire-disabled">Inquire</button>
+                    <div class="model-1"></div>
                 </div>
-                <div class="model-3-container">
-                    <div class="inquiry-button inquir-disabled"></div>
-                    <div class="model-2 model-image"></div>
+                <div class="model-3-container model-image">
+                    <button class="inquiry-button inquire-disabled">Inquire</button>
+                    <div class="model-2"></div>
                 </div>
-                <div class="model-2-container">
-                    <div class="inquiry-button inquir-disabled"></div>
-                    <div class="model-3 model-image"></div>
+                <div class="model-2-container model-image">
+                    <button class="inquiry-button inquire-disabled">Inquire</button>
+                    <div class="model-3"></div>
                 </div>
-                <div class="model-4-container">
-                    <div class="inquiry-button inquir-disabled"></div>
-                    <div class="model-4 model-image"></div>
+                <div class="model-4-container model-image">
+                    <button class="inquiry-button inquire-disabled">Inquire</button>
+                    <div class="model-4"></div>
                 </div>
             </div>
         </section>
@@ -44,4 +59,5 @@
 
     <script src="/js/index.js"></script>
     </body>
+
     </html>
