@@ -19,12 +19,14 @@
             </p>
         </section>
         <section id="inquire-box" class="inquire-box-disabled">
+            <!-- Forms elements accept 'action' and 'method' attributes, which we can send our post to our backend through (but we will submit and handle data first through submit function like you were) -->
+            <!-- <form action="/" method="post" class="contact-form" id="form-data"> -->
             <form class="contact-form" id="form-data">
                 <i id="inquiry-exit-button" class="fa-solid fa-circle-xmark"></i>
-                <input placeholder="Full Name" type="text" id="name">
-                <input placeholder="E-mail" type="email" id="email">
+                <input placeholder="Full Name" type="text" id="name" required>
+                <input placeholder="E-mail" type="email" id="email" required>
                 <label id="model-list-header" for="model-list">What model are you interested in?</label>
-                <select name="model" id="model-list">-
+                <select name="model" id="model-list" required>-
                     <option selected disabled value="">-- Choose Your Model --</option>
                     <option value="ionic-dome">Ionic Dome</option>
                     <option value="tetrix-dome">Tetrix Dome</option>
@@ -33,6 +35,15 @@
                 </select>
                 <input id="submit-button" type="submit" value="Send Message">
             </form>
+            <div class="result hide" id="result-form">
+                <div>
+                    <h2 id="result-title">Success!</h2>
+                    <p id="result-msg">Please check for an email from us!</p>
+                </div>
+                <button type="button" class="result-btn" id="result-btn">
+                    <h5>Done</h5>
+                </button>
+            </div>
         </section>
         <section id="model-section">
             <h4 class="model-section-header">Our Models</h4>
